@@ -1,0 +1,9 @@
+p {
+  display: inline-block;
+  padding: .5em;
+  font-family: 'Cookie';
+  font-size: 2em;
+}
+button {
+  margin-left: 1em;
+}

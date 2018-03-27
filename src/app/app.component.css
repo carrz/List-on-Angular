@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/48898/wood-cube-abc-cube-letters-48898.jpeg);
+  background-size: cover;
+  background-position-y: 50%;
+  color: #FFF;
+  padding: 5em;
+}
+h1 {
+  background-color: rgba(0, 0, 0, .15);
+  font-family: 'Kaushan Script';
+  font-size: 3rem;
+  display: inline-block;
+  padding: 1em;
+}

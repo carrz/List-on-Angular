@@ -1,0 +1,14 @@
+<!-- <input type="button" value="Login" (click)="onLoginClick()">
+<input type="button" value="Register" (click)="onRegisterClick()"> -->
+<app-register *ngIf="modalRegister"></app-register>
+<app-register-modal *ngIf="modalLogin"></app-register-modal>
+<div class="title">
+  <h1 *ngIf="authService.user | async">
+    Welcome {{(authService.user | async)?.email}} to {{ title }} 
+  </h1>
+  <h1 *ngIf="!authService.user | async">
+    Welcome to {{ title }} 
+  </h1>
+</div>
+<app-poem [id]=0 [mostrarVersos]="poemas[0]" (mostrar)="poemMostrar($event)"></app-poem>
+

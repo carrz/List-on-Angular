@@ -1,0 +1,15 @@
+<form [formGroup]='dialogForm' novalidate>
+  <div mat-dialog-content>
+    <p>Email</p>
+    <mat-form-field>
+      <input matInput formControlName='email'>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-content>
+    <p>Password</p>
+    <mat-form-field>
+      <input type="password" matInput formControlName='password'>
+    </mat-form-field>
+  </div>
+  <button mat-button (click)='onLogin()'>Login</button>
+</form>

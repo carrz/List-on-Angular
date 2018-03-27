@@ -1,0 +1,5 @@
+<div class="p-com" *ngFor="let verso of (versos | async)">
+  <mat-card><app-verso (ondelete)="deleteVerso($event)" [verso]='verso'></app-verso></mat-card>
+</div>
+<!-- <input type="button" (click)="mostrarClick()" value="Mostrar" /> -->
+<app-verso-formulario (submit)='submit($event)'></app-verso-formulario>
