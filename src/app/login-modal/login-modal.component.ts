@@ -9,19 +9,19 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginModalComponent implements OnInit {
 
-  dialogForm: FormGroup;
+  userForm: FormGroup;
   constructor(private fb: FormBuilder, public dialogRef: MatDialogRef<LoginModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
-    this.dialogForm = this.fb.group({
+    this.userForm = this.fb.group({
       'email' : [''],
       'password' : ['']
     });
   }
   onLogin() {
-    this.data.email = this.dialogForm.value.email;
-    this.data.password = this.dialogForm.value.password;
+    this.data.email = this.userForm.value.email;
+    this.data.password = this.userForm.value.password;
     this.dialogRef.close(this.data);
   }
 }
