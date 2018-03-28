@@ -19,7 +19,7 @@ export class LoginModalComponent implements OnInit {
       'password' : ['']
     });
   }
-  onRegister() {
+  onLogin() {
     this.data.email = this.dialogForm.value.email;
     this.data.password = this.dialogForm.value.password;
     this.dialogRef.close(this.data);
